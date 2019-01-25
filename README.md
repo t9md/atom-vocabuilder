@@ -28,7 +28,7 @@ Let me explain what actually happen when you click 3rd line, it's `head-word` is
 Vocabuilder searches `abdominal` in following apps.
 
 - open Dictionary.app open and search.
-- Launch Google Chrome and each word by "Google Image": require [WebDriver for Chrome](http://chromedriver.chromium.org/downloads).
+- Launch Google Chrome and each word by "Google Image": Require manual install [WebDriver for Chrome](http://chromedriver.chromium.org/downloads).
 - Let mac speak word by `say` command.
 
 Each action can be disabled one by one on setting-view.
