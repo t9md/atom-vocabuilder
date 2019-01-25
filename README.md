@@ -1,6 +1,7 @@
 ## What's this?
 
 Use Atom editor as frontend to nourish your vocabularies.  
+As you move cursor in buffer, it search on system's dictionary, Google Image, and pronounce it with `say` command.  
 
 ![vocabuilder](https://raw.githubusercontent.com/t9md/t9md/2a2a0231ba87f66c8ac7cd9ff0302c28653607d5/img/atom-vocabuilder.gif)
 
