@@ -2,7 +2,7 @@
   "name": "vocabuilder",
   "main": "./lib/main",
   "version": "0.1.0",
-  "description": "Let me do vocabuild!",
+  "description": "Let me vocabuild!",
   "keywords": [
     "translate"
   ],
