@@ -19,7 +19,7 @@ abject	惨めな
 ```
 
 Then you invoke `vocabuilder:toggle-auto-search`.  
-From now, each time you move cursor on this editor, vocabuilder automatically search `head-word` in different app.
+From now, each time you move cursor on this editor, vocabuilder automatically search `head-word` in different ap  
 What is `head-word`? It's very first word on current line.  
 So, when your cursor is first line, `head-word` is `abate`.  
 Because search is done for `head-word`, you can place cursor loosely.  
@@ -32,6 +32,13 @@ Vocabuilder searches `abdominal` in following apps.
 - Let mac speak word by `say` command.
 
 Each action can be disabled one by one on setting-view.
+
+### NOTE for Google Image search
+
+Vocabuilder use selenium to programmatically control Chrome Web browser.  
+So if you want use Google Image search by Chrome browser, you need to install  [WebDriver for Chrome](http://chromedriver.chromium.org/downloads) manually.  
+Download and extract and copy it to in your PATH.  
+
 
 ### Development status
 
