@@ -23,7 +23,8 @@
   },
   "activationCommands": {
     "atom-text-editor": [
-      "vocabuilder:toggle"
+      "vocabuilder:toggle-auto-search",
+      "vocabuilder:manual-search"
     ]
   },
   "configSchema": {
