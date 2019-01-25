@@ -2,6 +2,8 @@
 
 Use Atom editor as frontend to nourish your vocabularies.  
 
+![vocabuilder](https://raw.githubusercontent.com/t9md/t9md/2a2a0231ba87f66c8ac7cd9ff0302c28653607d5/img/atom-vocabuilder.gif)
+
 ## Quick Tour
 
 Assume you open following text in Atom.
