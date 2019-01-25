@@ -1,6 +1,10 @@
 ## What's this?
 
-When you enabled `vocabuilder:toggle` in certain type of text like blow.  
+Use Atom editor as frontend to nourish your vocabularies.  
+
+## Quick Tour
+
+Assume you open following text in Atom.
 
 ```
 abate	和らぐ、治まる
@@ -11,21 +15,20 @@ abhorrent	大嫌いな、憎むべき
 abject	惨めな
 ```
 
-Then as move up or down with `j`, `k`, head word(first column word) are handled by following actions.
+Then you invoke `vocabuilder:toggle-auto-search`.  
+From now, each time you move cursor on this editor, vocabuilder automatically search `head-word` in different app.
+What is `head-word`? It's very first word on current line.  
+So, when your cursor is first line, `head-word` is `abate`.  
+Because search is done for `head-word`, you can place cursor loosely.  
 
-- Dictionary.app open `word`
-- Chrome search `word` by "Google Image": require [WebDriver for Chrome](http://chromedriver.chromium.org/downloads).
-- `say` command pronounce `word` with Samantha's voice.
+Let me explain what actually happen when you click 3rd line, it's `head-word` is `abdominal`.
+Vocabuilder searches `abdominal` in following apps.
 
-Each action can be disabled on setting-view.
+- open Dictionary.app open and search.
+- Launch Google Chrome and each word by "Google Image": require [WebDriver for Chrome](http://chromedriver.chromium.org/downloads).
+- Let mac speak word by `say` command.
 
-### Keymap
-
-```
-'atom-text-editor.learn-vocabulary-mode.vim-mode-plus:not(.insert-mode)':
-  'k': 'vim-mode-plus-user:vocabuilder-move-up'
-  'j': 'vim-mode-plus-user:vocabuilder-move-down'
-```
+Each action can be disabled one by one on setting-view.
 
 ### Development status
 
