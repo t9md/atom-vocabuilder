@@ -48,6 +48,7 @@ Download and extract and copy it to in your PATH.
 - `vocabuilder:caption-show-all-fields`:  Show all fields if some fields are hidden.
 - `vocabuilder:caption-toggle-1st-field`:  Hide/show 1st field(=`headword`) on caption.
 - `vocabuilder:caption-toggle-2nd-field`:  Hide/show 2nd field(=`headword`) on caption.
+- `vocabuilder:caption-show-all-fields-or-move-down`:  Show all hidden field or move down. You can understand this command as simple `next` command which show answer first if answer was already shown, then move to next quiz.
 
 ### Keymap Example
 
@@ -60,6 +61,7 @@ NO keymap, you need to set it to `keymap.cson` if you want.
   'ctrl-0': 'vocabuilder:caption-show-all-fields'
   'ctrl-1': 'vocabuilder:caption-toggle-1st-field'
   'ctrl-2': 'vocabuilder:caption-toggle-2nd-field'
+  'enter': 'vocabuilder:caption-show-all-fields-or-move-down'
 ```
 
 - for vim-mode-plus user
@@ -69,6 +71,7 @@ NO keymap, you need to set it to `keymap.cson` if you want.
   ';': 'vocabuilder:caption-show-all-fields'
   '1': 'vocabuilder:caption-toggle-1st-field'
   '2': 'vocabuilder:caption-toggle-2nd-field'
+  'j': 'vocabuilder:caption-show-all-fields-or-move-down'
 ```
 
 ### Development status
