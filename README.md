@@ -46,12 +46,18 @@ Download and extract and copy it to in your PATH.
 ```
 'atom-text-editor.vocabuilder':
   'ctrl-t': 'vocabuilder:toggle-caption'
+  'ctrl-1': 'vocabuilder:caption-toggle-1st-field'
+  'ctrl-2': 'vocabuilder:caption-toggle-2st-field'
+  'ctrl-0': 'vocabuilder:caption-show-all-fields'
 ```
 
 - for vim-mode-plus user
 ```
 'atom-text-editor.vocabuilder.vim-mode-plus:not(.insert-mode)':
   ';': 'vocabuilder:toggle-caption'
+  '1': 'vocabuilder:caption-toggle-1st-field'
+  '2': 'vocabuilder:caption-toggle-2st-field'
+  '0': 'vocabuilder:caption-show-all-fields'
 ```
 
 ### Development status
