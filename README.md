@@ -40,6 +40,20 @@ So if you want use Google Image search by Chrome browser, you need to install  [
 Download and extract and copy it to in your PATH.  
 
 
+### Keymap
+
+- for normal user
+```
+'atom-text-editor.vocabuilder':
+  'ctrl-t': 'vocabuilder:toggle-caption'
+```
+
+- for vim-mode-plus user
+```
+'atom-text-editor.vocabuilder.vim-mode-plus:not(.insert-mode)':
+  ';': 'vocabuilder:toggle-caption'
+```
+
 ### Development status
 
 Alpha
