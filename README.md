@@ -40,24 +40,35 @@ So if you want use Google Image search by Chrome browser, you need to install  [
 Download and extract and copy it to in your PATH.  
 
 
-### Keymap
+### Commands
+
+- `vocabuilder:toggle-auto-search`: Toggle Auto search mode.
+- `vocabuilder:manual-search`:  Manually search head word of current row.
+- `vocabuilder:caption-toggle`:  Show/hide caption on browser.
+- `vocabuilder:caption-show-all-fields`:  Show all fields if some fields are hidden.
+- `vocabuilder:caption-toggle-1st-field`:  Hide/show 1st field(=`headword`) on caption.
+- `vocabuilder:caption-toggle-2nd-field`:  Hide/show 2nd field(=`headword`) on caption.
+
+### Keymap Example
+
+NO keymap, you need to set it to `keymap.cson` if you want.
 
 - for normal user
 ```
 'atom-text-editor.vocabuilder':
-  'ctrl-t': 'vocabuilder:toggle-caption'
-  'ctrl-1': 'vocabuilder:caption-toggle-1st-field'
-  'ctrl-2': 'vocabuilder:caption-toggle-2st-field'
+  'ctrl-t': 'vocabuilder:caption-toggle'
   'ctrl-0': 'vocabuilder:caption-show-all-fields'
+  'ctrl-1': 'vocabuilder:caption-toggle-1st-field'
+  'ctrl-2': 'vocabuilder:caption-toggle-2nd-field'
 ```
 
 - for vim-mode-plus user
 ```
 'atom-text-editor.vocabuilder.vim-mode-plus:not(.insert-mode)':
-  ';': 'vocabuilder:toggle-caption'
+  'm': 'vocabuilder:caption-toggle'
+  ';': 'vocabuilder:caption-show-all-fields'
   '1': 'vocabuilder:caption-toggle-1st-field'
-  '2': 'vocabuilder:caption-toggle-2st-field'
-  '0': 'vocabuilder:caption-show-all-fields'
+  '2': 'vocabuilder:caption-toggle-2nd-field'
 ```
 
 ### Development status
