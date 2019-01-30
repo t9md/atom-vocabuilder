@@ -47,6 +47,11 @@
       "order": 4,
       "type": "boolean",
       "default": "true"
+    },
+    "userStyle": {
+      "order": 5,
+      "type": "string",
+      "default": "#vocabuilder-caption {\n  position: fixed;\n  top: 30%;\n  left: 5%;\n  z-index: 5;\n  width: 80%;\n  border-radius: 30px;\n  padding: 30px;\n  color: white;\n  background-color: black;\n  opacity: 0.6;\n  font-size: 120px;\n  text-align: center;\n}\n\n#vocabuilder-caption-item-2 {\n  font-size: 0.5em;\n}\n"
     }
   },
   "consumedServices": {

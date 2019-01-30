@@ -74,6 +74,10 @@ NO keymap, you need to set it to `keymap.cson` if you want.
   'j': 'vocabuilder:caption-show-all-fields-or-move-down'
 ```
 
+### User style
+
+You can edit and append your favorite style in `userStyle` setting.
+
 ### Development status
 
 Alpha
