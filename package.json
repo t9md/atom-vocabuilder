@@ -3,9 +3,7 @@
   "main": "./lib/main",
   "version": "0.5.0",
   "description": "Let me vocabuild!",
-  "keywords": [
-    "translate"
-  ],
+  "keywords": ["translate"],
   "repository": "https://github.com/t9md/atom-vocabuilder",
   "license": "MIT",
   "engines": {
@@ -18,14 +16,12 @@
   "scripts": {
     "test": "apm test",
     "watch": "fswatch -0 spec lib | xargs -0 -n1 -I{} apm test",
-    "prettier": "prettier --write --no-semi --print-width=120 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/*.js'",
+    "prettier":
+      "prettier --write --no-semi --print-width=120 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/*.js'",
     "lint": "standard lib/*.js lib/**/*.js spec/*.js"
   },
   "activationCommands": {
-    "atom-text-editor": [
-      "vocabuilder:toggle-auto-search",
-      "vocabuilder:manual-search"
-    ]
+    "atom-text-editor": ["vocabuilder:toggle-auto-search", "vocabuilder:manual-search"]
   },
   "configSchema": {
     "useDictLink": {
@@ -51,7 +47,15 @@
     "userStyle": {
       "order": 5,
       "type": "string",
-      "default": "#vocabuilder-caption {\n  position: fixed;\n  top: 30%;\n  left: 5%;\n  z-index: 5;\n  width: 80%;\n  border-radius: 30px;\n  padding: 30px;\n  color: white;\n  background-color: black;\n  opacity: 0.6;\n  font-size: 120px;\n  text-align: center;\n}\n\n#vocabuilder-caption-item-2 {\n  font-size: 0.5em;\n}\n"
+      "default":
+        "#vocabuilder-caption {\n  position: fixed;\n  top: 30%;\n  left: 5%;\n  z-index: 5;\n  width: 80%;\n  border-radius: 30px;\n  padding: 30px;\n  color: white;\n  background-color: black;\n  opacity: 0.6;\n  font-size: 120px;\n  text-align: center;\n}\n\n#vocabuilder-caption-item-2 {\n  font-size: 0.5em;\n}\n"
+    },
+    "fieldReplaceWithNewLineRegex": {
+      "order": 6,
+      "type": "string",
+      "default": "\\s*[\\/;]\\s*",
+      "description":
+        "When fieald matched this regex, it replace with '\n'. By default `/` and `;` are replaced with '\n'"
     }
   },
   "consumedServices": {
@@ -68,12 +72,8 @@
       "jasmine": true,
       "node": true
     },
-    "globals": [
-      "atom"
-    ],
-    "ignore": [
-      "spec/fixtures/*"
-    ]
+    "globals": ["atom"],
+    "ignore": ["spec/fixtures/*"]
   },
   "dependencies": {
     "selenium-webdriver": "^4.0.0-alpha.1"
