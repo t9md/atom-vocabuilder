@@ -1,3 +1,6 @@
+## 0.6.0
+- [New] `fieldReplaceWithNewLineRegex` config control which patter to be replaced with `\n` within field.
+- [Fix] `say` command now correctly say only for head word. It was inadvertently pronounced whole line.
 ## 0.5.0
 - [New] Allow Show/hide image. Please note, slight delay or flash before hidden is inevitable.
 - [Improve] Auto search when current while line text was deleted and next line come under cursor.
