@@ -1,3 +1,10 @@
+## 0.5.0
+- [New] Allow Show/hide image. Please note, slight delay or flash before hidden is inevitable.
+- [Improve] Auto search when current while line text was deleted and next line come under cursor.
+- [Improve] Restart webdriver(browser) if necessary.
+- [New] User can now modify own caption style.
+- [New] Add command to quickly toggle `useSay`, `useDictLink`, and `useGoogle` setting.
+
 ## 0.4.0
 - [New] New command `vocabuilder:caption-show-all-fields-or-move-down` does what you mean.
   - When you hide 2nd field, hitting this command show let all hidden field show, then `move-down` for next execution.
